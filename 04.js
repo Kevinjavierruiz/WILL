@@ -13,7 +13,16 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  let numString = num.toString();
+  let stringReverso='';
+  let booleano = false;
+  for(let i = numString.length-1;i>=0;i--){
+    stringReverso= stringReverso + numString[i];
+  }
+  if(stringReverso === numString){
+    booleano= true;
+  }
+  return booleano;
 }
 
 // No modifiques nada debajo de esta linea //
